@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Premiers tableaux en JavaScript</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1>Premiers algorithmes en JavasScript</h1>
+<script>
+
+/************************************************************************************/
+/*une ligne de 10 étoiles avec un POUR (For), dans un tableau HTML */
+document.write('<table border="1">')
+document.write('<tr>')
+for (var i=1 ; i<=10 ; i=i+1)
+{
+	document.write('<td>')
+	document.write('*')
+	document.write('</td>')
+}
+document.write('</tr>')
+/* fin de ligne*/
+
+document.write('</table>')
+document.write('<br><br><br>')
+/***********************************************************************************/
+document.write('<table border="1">')
+for (var j=1 ; j<=5 ; j=j+1)
+	{
+		document.write("<tr>")
+		/*début de ligne*/
+		for (var i=1 ; i<=20 ; i=i+1)
+		{
+		document.write('<td>')
+		document.write('*')
+		document.write('</td>')
+		}
+	document.write("</tr>") 
+	}
+document.write ('</table>')
+document.write ('<br><br><br>')
+/**********************************************************************************/
+document.write('<table  border="1">')
+for (var j=1 ; j<=3 ; j=j+1)
+	{
+		document.write("<tr>")
+		/*début de ligne*/
+		for (var i=1 ; i<=6 ; i=i+1)
+		{
+		document.write('<td>')
+		document.write('<IMG SRC="01.png ">')
+		document.write('</td>')
+		}
+	document.write("</tr>") 
+	}
+document.write ('</table>')
+document.write('<br><br><br>')
+/*********************************************************************************/
+document.write('<table  border="1">')
+for (var j=1 ; j<=10 ; j=j+1)
+	{
+		document.write("<tr>")
+		/*début de ligne*/
+		for (var i=1 ; i<=10 ; i=i+1)
+		{
+		document.write('<td>')
+		document.write(i*j)
+		document.write('</td>')
+		}
+	document.write("</tr>") 
+	}
+document.write ('</table>')
+document.write('<br><br><br>')
+/*********************************************************************************/
+document.write('<table border="1">')
+
+/*première ligne pleine*/
+document.write('<tr>')
+/*début de ligne*/
+for (var i=1; i<=10 ; i+=1)
+{
+	document.write('<td>')
+	document.write('*')
+	document.write('</td>')
+}
+document.write('</tr>')
+/*fin de ligne*/
+
+/*huit lignes creuses*/
+for (var j=1 ; j<=8 ; j=j+1)
+{
+	/*début de ligne creuse*/
+	document.write('<tr>')
+	document.write('<td>*</td>')
+	for (var i=1 ; i<=8 ; i=i+1)
+		{
+			document.write('<td></td>')
+		}
+	document.write('<td>*</td>')
+	document.write('</tr>')
+	/*fin de ligne creuse*/
+}
+/*début de ligne*/
+for (var i=1; i<=10 ; i+=1)
+{
+	document.write('<td>')
+	document.write('*')
+	document.write('</td>')
+}
+document.write('</tr>')
+document.write('</table>')
+</script>
+</body>
+</html>
